@@ -1,12 +1,3 @@
-# cli-config-boilerplate
-
-
-
-```shell
-go get github.com/jxsl13/cli-config-boilerplate@latest
-```
-
-```go
 package cliconfig_test
 
 import (
@@ -83,6 +74,3 @@ func (c *CLI) RunE(cmd *cobra.Command, args []string) error {
 	fmt.Fprintln(cmd.OutOrStdout(), c.Config.AppPort)
 	return nil
 }
-
-
-```
